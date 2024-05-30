@@ -1,85 +1,81 @@
+/* Import Montserrat font from Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
 html,
 body {
-  margin: 0;
-  padding: 1em;
-  font-family: "Montserrat", Arial, Helvetica, sans-serif;
-  background-color: #d4b996ff;
-}
-
-a {
-  color: rgb(255, 255, 255);
+  margin: 0; /* Remove default margin */
+  padding: 1em; /* Add padding around the page */
+  font-family: "Montserrat", Arial, Helvetica, sans-serif; /* Set the font family */
+  background-color: #d4b996ff; /* Set background color */
 }
 
 header {
-  background-color: rgb(122, 101, 82);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
-  display: flex;
-  justify-content: center;
-  border-radius: 15px;
+  background-color: rgb(122, 101, 82); /* Set background color for header */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25); /* Add shadow to header */
+  display: flex; /* Use flexbox for header layout */
+  justify-content: center; /* Center content horizontally */
+  border-radius: 15px; /* Round the corners of the header */
 }
 
 h1 {
-  color: rgb(255, 255, 255);
-  padding: 1em;
-  margin: 0;
-  font-size: 2em;
-  text-align: left;
+  color: rgb(255, 255, 255); /* Set text color to white */
+  padding: 1em; /* Add padding inside the header */
+  margin: 0; /* Remove default margin */
+  font-size: 2em; /* Set font size */
+  text-align: left; /* Align text to the left */
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1em;
-  padding: 2em;
+  display: grid; /* Use grid layout */
+  grid-template-columns: 1fr; /* Define single column layout */
+  gap: 1em; /* Add gap between grid items */
+  padding: 2em; /* Add padding around the grid */
 }
 
 @media (min-width: 600px) {
   .grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; /* Define two-column layout for medium screens */
   }
 }
 
 @media (min-width: 992px) {
   .grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; /* Define two-column layout for large screens */
   }
 }
 
 .grid-item {
-  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
-  padding: 1.5em;
-  background-color: #f1f1f1;
-  transition: 0.5s;
-  animation: fadeIn 0.5s;
-  border-radius: 15px;
-  width: 50em;
-  height: 60em;
-  justify-content: wrap;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25); /* Add shadow to grid items */
+  padding: 1.5em; /* Add padding inside grid items */
+  background-color: #f1f1f1; /* Set background color of grid items */
+  transition: 0.5s; /* Add transition effect */
+  animation: fadeIn 0.5s; /* Apply fade-in animation */
+  border-radius: 15px; /* Round the corners of grid items */
+  width: 50em; /* Set fixed width for grid items */
+  height: 60em; /* Set fixed height for grid items */
 }
 
 .grid-item:hover {
-  transform: scale(1.01);
+  transform: scale(1.01); /* Slightly scale up grid item on hover */
 }
 
 .grid-item img {
-  width: 50em;
-  height: 25em;
-  object-fit: fill;
-  border-radius: 10px;
+  width: 50em; /* Set fixed width for images */
+  height: 25em; /* Set fixed height for images */
+  object-fit: fill; /* Ensure image covers the entire area */
+  border-radius: 10px; /* Round the corners of images */
 }
 
 .grid-item p {
-  margin-top: 10px;
-  font-size: 1.2em;
-  display: block;
+  margin-top: 10px; /* Add margin above paragraphs */
+  font-size: 1.2em; /* Set font size for paragraphs */
 }
 
 @keyframes fadeIn {
   from {
-    opacity: 0;
+    opacity: 0; /* Start with 0 opacity */
   }
   to {
-    opacity: 1;
+    opacity: 1; /* End with full opacity */
   }
 }
