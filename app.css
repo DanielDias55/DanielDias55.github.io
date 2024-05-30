@@ -1,7 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 html,
 body {
   margin: 0;
-  padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #f0f0f0;
+  padding: 1em;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  background-color: #d4b996ff;
+}
+
+a {
+  color: rgb(255, 255, 255);
+}
+
+header {
+  background-color: rgb(122, 101, 82);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  border-radius: 15px;
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+  padding: 1em;
+  margin: 0;
+  font-size: 2em;
+  text-align: left;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1em;
+  padding: 2em;
+}
+
+@media (min-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 992px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.grid-item {
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
+  padding: 1.5em;
+  background-color: #f1f1f1;
+  transition: 0.5s;
+  animation: fadeIn 0.5s;
+  border-radius: 15px;
+  width: 50em;
+}
+
+.grid-item:hover {
+  transform: scale(1.01);
+}
+
+.grid-item img {
+  width: 50em;
+  height: 25em;
+  object-fit: fill;
+  border-radius: 10px;
+}
+
+.grid-item p {
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
