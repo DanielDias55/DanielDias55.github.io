@@ -54,6 +54,8 @@ h1 {
   animation: fadeIn 0.5s;
   border-radius: 15px;
   width: 50em;
+  height: 60em;
+  justify-content: wrap;
 }
 
 .grid-item:hover {
@@ -70,6 +72,7 @@ h1 {
 .grid-item p {
   margin-top: 10px;
   font-size: 1.2em;
+  display: block;
 }
 
 @keyframes fadeIn {
